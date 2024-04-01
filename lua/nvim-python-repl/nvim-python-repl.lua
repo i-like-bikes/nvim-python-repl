@@ -38,6 +38,8 @@ local select = function ()
     return message
 end
 
+local term = require("toggleterm")
+
 local term_open = function()
     local orig_win = vim.api.nvim_get_current_win()
     if M.term.chanid ~= nil then return end
